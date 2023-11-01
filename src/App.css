@@ -1,0 +1,414 @@
+/* Roboto Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Poppins Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Dot Gothic */
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+body.no-scroll {
+  overflow-y: hidden;
+}
+
+/* nav */
+#topnav {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: #005a87;
+}
+#logo img {
+  width: 200px;
+  cursor: pointer;
+}
+#menu {
+  display: none;
+  text-align: right;
+}
+#menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1.2rem;
+}
+
+#donate-nav-link a {
+  color: orange;
+}
+
+/* mobile menu */
+#button-container {
+  width: 50%;
+}
+
+/* buttons */
+button {
+  background: none;
+  border: none;
+  /* display: block; */
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#hamburger-icon {
+  color: white;
+  font-size: 33px;
+  position: relative;
+  top: 2px;
+}
+
+#mobile-menu {
+  width: 100%;
+  height: 100%;
+  background-color: #0693e3;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 25%;
+}
+#mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+#close-menu {
+  z-index: 2;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 53px;
+  color: white;
+}
+/* NAV MENU END!!------------ */
+
+/* Homepage ---------------------------------------------- */
+#hero-container {
+  height: 640px;
+  overflow: hidden;
+  position: relative;
+}
+#hero-container img {
+  width: 100%;
+}
+#hero-statement-text {
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  background: #005a87;
+  padding: 2rem;
+}
+.hero-title {
+  color: white;
+}
+.hero-text {
+  color: white;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.news-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#news-grid-container {
+  margin: 2rem 0rem;
+  display: grid;
+  gap: 4rem;
+  justify-content: center;
+}
+#news-container {
+  background: #ededed;
+  width: 320px;
+  cursor: pointer;
+}
+
+.news-image {
+  width: 320px;
+}
+.news-advert {
+  padding: 0.5rem;
+}
+.news-text {
+  padding: 0.5rem;
+}
+
+.help-donate-grid-container {
+  display: grid;
+  text-align: center;
+}
+
+.help-item {
+  background: #0693e3;
+  color: white;
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+}
+.donate-item {
+  background: #9b51e0;
+  color: white;
+  padding: 2rem;
+  display: grid;
+  align-items: center;
+}
+.grid-item-title {
+  margin-bottom: 1rem;
+}
+
+.home-grid-text {
+  width: 340px;
+  margin: auto;
+}
+
+.help-home-buttons {
+  color: white;
+  margin: 2rem 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* CONTACT PAGE ----------------------------------------------------- */
+#contact-hero-container {
+  height: 300px;
+  overflow: hidden;
+}
+#contact-hero-container img {
+  width: 100%;
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.page-title {
+  padding: 1rem 2rem;
+  background: #005a87;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+.contact-support-text {
+  margin-top: 2rem;
+}
+.contact-support-text a {
+  text-decoration: none;
+  color: #0693e3;
+}
+.contact-info-help {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.green-text {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #7ebb41;
+}
+
+input {
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+  background: #ededed;
+  border: none;
+  padding: 10px;
+  width: 400px;
+}
+
+.message-input {
+  width: 400px;
+  height: 200px;
+  background: #ededed;
+  border: none;
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.form-submit-button {
+  background: #005a87;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  margin-bottom: 4rem;
+}
+
+/* DONATION PAGE!! _------------------------------ */
+.donation-image {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+#product-grid {
+  margin: 2rem 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.donation-container {
+  text-align: center;
+}
+
+.name {
+  margin-bottom: 1rem;
+}
+.price-donation {
+  margin-bottom: 1rem;
+}
+
+.donate-button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: #0693e3;
+  color: white;
+  font-family: "Lato";
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+/* Resources page ------------------------------ */
+#resource-grid {
+  margin: 2rem 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.resource-container {
+  text-align: center;
+}
+.resource-container li {
+  list-style: none;
+}
+.resource-container a {
+  text-decoration: none;
+  color: #0693e3;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+}
+span {
+  margin-bottom: 1rem;
+}
+/* Footer --------- */
+.footer-wrapper {
+  position: sticky;
+  top: 100%;
+}
+#footer-container-grid {
+  display: grid;
+  justify-content: left;
+  gap: 2rem;
+
+  width: 100%;
+  /* background: #005a87; */
+  padding: 2rem;
+}
+
+.footer-grid-item {
+  color: white;
+}
+.footer-grid-item li {
+  list-style: none;
+  margin-top: 1rem;
+}
+.footer-grid-item a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.end-text-footer {
+  background: #005a87;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  border-top: white solid 1px;
+}
+
+/* Media queries */
+@media screen and (min-width: 780px) {
+  h1 {
+    font-size: 60px;
+  }
+  #menu {
+    display: block;
+    width: 75%;
+  }
+  #menu li {
+    display: inline-block;
+  }
+  #menu-container {
+    display: none;
+  }
+
+  /* homepage */
+  #news-grid-container {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .help-donate-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* donation page ----------------------- */
+  #product-grid {
+    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  /* Resources -------------------------- */
+  #resource-grid {
+    margin: 2rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 6rem;
+    justify-content: center;
+  }
+
+  /* Footer ------------------------- */
+
+  #footer-container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 2rem;
+
+    width: 100%;
+    /* background: #005a87; */
+    padding: 2rem;
+  }
+
+  /* end of media query! ---------------------- */
+}
